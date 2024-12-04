@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="weather-icon">
+                <img id="weatherIcon" src="" alt="Weather Icon">
+            </div>
+            <div class="weather-info">
+                <h2 id="cityName">City Name</h2>
+                <div class="temperature">
+                    <span id="temp">--</span>°C
+                </div>
+                <div class="description" id="weatherDescription">Weather Description</div>
+                <div class="details">
+                    <div class="col">
+                        <div class="detail">
+                            <span class="label">Humidity</span>
+                            <span id="humidity">--%</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Wind</span>
+                            <span id="windSpeed">-- km/h</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="detail">
+                            <span class="label">Feels Like</span>
+                            <span id="feelsLike">--°C</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Pressure</span>
+                            <span id="pressure">-- hPa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+        <div id="loader" class="loader"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
